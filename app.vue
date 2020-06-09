@@ -39,7 +39,8 @@ export default {
       esri
         .dynamicMapLayer({
           url:
-            'http://data.marsgis.cn/arcgis/rest/services/mars/hefei/MapServer/'
+            'http://data.marsgis.cn/arcgis/rest/services/mars/hefei/MapServer',
+          layers: [24, 34]
         })
         .addTo(this.map)
       this.map.on('click', e => {
